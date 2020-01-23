@@ -1,0 +1,20 @@
+<h1 class="text-center">Create a new restaurant </h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-offset-3">
+
+    <%= simple_form_for @restaurant do |f| %>
+      <%= f.input :name, placeholder: "What's the place called" %>
+      <%= f.input :address, placeholder: "What's the address" %>
+      <%= f.input :category, placeholder: "What's the category" %>
+      <%= f.submit "Post restaurant", class: "btn btn-primary" %>
+    <% end %>
+
+    </div>
+  </div>
+</div>
+
+
+
+
